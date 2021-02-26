@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    float flo1;
+    int i1,i2;
+    scanf("%f",&flo1);
+    scanf("%d",&i1);
+    scanf("%d",&i2);
+   float tip=(flo1*i1)/100;
+   float tax=(i2*i2)/100;
+   int total_cost = flo1+tip+tax;
+   int t=total_cost+1;
+   if(t==12)
+{
+    printf("%d",t+1);       
+}
+else
+{
+   printf("%d",total_cost+1);
+}
+   return 0;
+}
